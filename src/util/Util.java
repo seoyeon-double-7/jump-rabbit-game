@@ -43,7 +43,7 @@ public class Util {
 		for(int i=0;i<pixels.length;i++)
 		      picture[i%width][i/width]=pixels[i] + 16777216;
 		return picture;
-	}
+	} 
 	
 	// 현재시간 타임스탬프로 가져오기
 	public static long getTime() {
@@ -54,7 +54,7 @@ public class Util {
 	public static void drawFancyString(Graphics2D g, String str, int x, int y, float size, Color internalColor) {
 		  if(str.length()==0)return;
 		  AffineTransform orig = g.getTransform();
-		  Font f = new Font("Harlow Solid Italic", Font.BOLD, 50);
+		  Font f = new Font("STCaiyun", Font.BOLD, 50);
 		  TextLayout tl = new TextLayout(str, f, g.getFontRenderContext());
 		  AffineTransform transform = g.getTransform();
 		  FontMetrics fm = g.getFontMetrics(f);
@@ -65,8 +65,8 @@ public class Util {
 		  g.setTransform(transform);
 		  g.setColor(internalColor);
 		  g.fill(outline);
-		  g.setStroke(new BasicStroke(size/25));
-		  g.setColor(Color.BLACK);
+		  g.setStroke(new BasicStroke(size/45));
+//		  g.setColor(Color.BLACK);
 		  g.draw(outline);
 		  
 		  g.setTransform(orig);

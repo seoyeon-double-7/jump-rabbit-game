@@ -310,7 +310,7 @@ public class GamePanel extends JPanel {
 //		buffg.drawString(Integer.toString(resultScore), 700, 85);
 
 		// 점수를 그린다
-		Util.drawFancyString(g2, Integer.toString(resultScore), 1000, 58, 50, Color.WHITE);
+		Util.drawFancyString(g2, Integer.toString(resultScore), 900, 58, 50, new Color(255,238,248));
 
 		// 하트를 그린다
 		for (int i = 0; i < heartCount; i++) {
@@ -811,19 +811,19 @@ public class GamePanel extends JPanel {
 						b12.setX(b12.getWidth());
 					}
 
-					if (b21.getX() < -(b21.getWidth() - 1)) { // 배경1-1 이 -(배경넓이)보다 작으면, 즉 화면밖으로 모두나가면 배경 1-2뒤에 붙음
-						b21.setX(b21.getWidth());
-					}
-					if (b22.getX() < -(b22.getWidth() - 1)) { // 배경1-2 가 -(배경넓이)보다 작으면, 즉 화면밖으로 모두나가면 배경 1-1뒤에 붙음
-						b22.setX(b22.getWidth());
-					}
+//					if (b21.getX() < -(b21.getWidth() - 1)) { // 배경1-1 이 -(배경넓이)보다 작으면, 즉 화면밖으로 모두나가면 배경 1-2뒤에 붙음
+//						b21.setX(b21.getWidth());
+//					}
+//					if (b22.getX() < -(b22.getWidth() - 1)) { // 배경1-2 가 -(배경넓이)보다 작으면, 즉 화면밖으로 모두나가면 배경 1-1뒤에 붙음
+//						b22.setX(b22.getWidth());
+//					}
 
 					// 배경의 x좌표를 -1 해준다 (왼쪽으로 흐르는 효과)
 					b11.setX(b11.getX() - gameSpeed / 3);
 					b12.setX(b12.getX() - gameSpeed / 3);
 
-					b21.setX(b21.getX() - gameSpeed * 2 / 3);
-					b22.setX(b22.getX() - gameSpeed * 2 / 3);
+//					b21.setX(b21.getX() - gameSpeed * 2 / 3);
+//					b22.setX(b22.getX() - gameSpeed * 2 / 3);
 
 					// 발판위치를 -3 씩 해준다. (왼쪽으로 흐르는 효과)
 					for (int i = 0; i < fieldList.size(); i++) {
