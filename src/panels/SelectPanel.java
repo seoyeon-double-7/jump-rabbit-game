@@ -1,10 +1,8 @@
 package panels;
 
-import java.awt.Color;
-import java.awt.event.ActionListener;
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
-import java.awt.event.MouseListener;
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.event.*;
 
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
@@ -31,6 +29,7 @@ public class SelectPanel extends JPanel {
 
 	// 시작 버튼 이미지아이콘
 	private ImageIcon start = new ImageIcon("img/select/selectBtn.png");
+	private ImageIcon started = new ImageIcon("img/select/selectedBtn.png");
 	
 	// 이미지를 선택할 버튼
 	private JButton ch1;
@@ -63,6 +62,9 @@ public class SelectPanel extends JPanel {
 		StartBtn.setBorderPainted(false);
 		StartBtn.setContentAreaFilled(false);
 		StartBtn.setFocusPainted(false);
+		
+		
+		
 
 		// 캐릭터 ch1
 		ch1 = new JButton(ch01);
@@ -98,12 +100,12 @@ public class SelectPanel extends JPanel {
 				ch2.setIcon(ch022);
 				ch3.setIcon(ch03);
 				ch4.setIcon(ch04);
-				ci = new Rabbitimg(new ImageIcon("img/RabbitImg/rabbit2/normal.gif"),
-						new ImageIcon("img/RabbitImg/rabbit2/jump.gif"),
-						new ImageIcon("img/RabbitImg/rabbit2/doublejump.gif"),
-						new ImageIcon("img/RabbitImg/rabbit2/fall.png"),
-						new ImageIcon("img/RabbitImg/rabbit2/slide.gif"),
-						new ImageIcon("img/RabbitImg/rabbit2/hit.gif"));
+				ci = new Rabbitimg(new ImageIcon("img/RabbitImg/rabbit1/rightRabbit.gif"),
+						new ImageIcon("img/RabbitImg/rabbit1/rightRabbit.gif"),
+						new ImageIcon("img/RabbitImg/rabbit1/rightRabbit.gif"),
+						new ImageIcon("img/RabbitImg/rabbit1/rightRabbit.gif"),
+						new ImageIcon("img/RabbitImg/rabbit1/damageRabbit.gif"),
+						new ImageIcon("img/RabbitImg/rabbit1/damageRabbit.gif"));
 			}
 		});
 		ch2.setBounds(x+200, y, 150, 200);
@@ -122,12 +124,12 @@ public class SelectPanel extends JPanel {
 				ch2.setIcon(ch02);
 				ch3.setIcon(ch033);
 				ch4.setIcon(ch04);
-				ci = new Rabbitimg(new ImageIcon("img/RabbitImg/rabbit3/cookie.gif"),
-						new ImageIcon("img/cookieimRabbitImgg/rabbit3/jump.png"),
-						new ImageIcon("img/RabbitImg/rabbit3/doublejump.gif"),
-						new ImageIcon("img/RabbitImg/rabbit3/fall.png"),
-						new ImageIcon("img/RabbitImg/rabbit3/slide.gif"),
-						new ImageIcon("img/RabbitImg/rabbit3/hit.png"));
+				ci = new Rabbitimg(new ImageIcon("img/RabbitImg/rabbit1/rightRabbit.gif"),
+						new ImageIcon("img/RabbitImg/rabbit1/rightRabbit.gif"),
+						new ImageIcon("img/RabbitImg/rabbit1/rightRabbit.gif"),
+						new ImageIcon("img/RabbitImg/rabbit1/rightRabbit.gif"),
+						new ImageIcon("img/RabbitImg/rabbit1/damageRabbit.gif"),
+						new ImageIcon("img/RabbitImg/rabbit1/damageRabbit.gif"));
 			}
 		});
 		ch3.setBounds(x+400, y, 150, 200);
@@ -146,12 +148,12 @@ public class SelectPanel extends JPanel {
 				ch2.setIcon(ch02);
 				ch3.setIcon(ch03);
 				ch4.setIcon(ch044);
-				ci = new Rabbitimg(new ImageIcon("img/RabbitImg/rabbit4/kch.gif"),
-						new ImageIcon("img/RabbitImg/rabbit4/kjump.gif"),
-						new ImageIcon("img/RabbitImg/rabbit4/kjump.gif"),
-						new ImageIcon("img/RabbitImg/rabbit4/kjump.gif"),
-						new ImageIcon("img/RabbitImg/rabbit4/kslide.gif"),
-						new ImageIcon("img/RabbitImg/rabbit4/kch.gif"));
+				ci = new Rabbitimg(new ImageIcon("img/RabbitImg/rabbit1/rightRabbit.gif"),
+						new ImageIcon("img/RabbitImg/rabbit1/rightRabbit.gif"),
+						new ImageIcon("img/RabbitImg/rabbit1/rightRabbit.gif"),
+						new ImageIcon("img/RabbitImg/rabbit1/rightRabbit.gif"),
+						new ImageIcon("img/RabbitImg/rabbit1/damageRabbit.gif"),
+						new ImageIcon("img/RabbitImg/rabbit1/damageRabbit.gif"));;
 			}
 		});
 		ch4.setBounds(x+600, y, 150, 200);

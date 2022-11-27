@@ -88,11 +88,14 @@ public class Main extends listenAdapter {
 		
 		//start button 누르면 게임 시작
 		if (e.getComponent().getName().equals("StartBtn")) {
-			cl.show(frame.getContentPane(), "game");
-			gamePanel.gameSet(selectPanel.getCi());
-			gamePanel.gameStart();
-			gamePanel.requestFocus();
-
+			if (selectPanel.getCi() == null) {
+				JOptionPane.showMessageDialog(null, "캐릭터를 골라주세요"); // 캐릭터를 안골랐을경우 팝업
+			} else {
+				cl.show(frame.getContentPane(), "game"); // 캐릭터를 골랐다면 게임패널을 카드레이아웃 최상단으로 변경
+				gamePanel.gameSet(selectPanel.getCi()); // 쿠키이미지를 넘겨주고 게임패널 세팅
+				gamePanel.gameStart(); // 게임시작
+				gamePanel.requestFocus(); // 리스너를 game패널에 강제로 줌
+			}
 		} 
 	}
 }
