@@ -30,7 +30,7 @@ public class SelectPanel extends JPanel {
 	private ImageIcon ch044 = new ImageIcon("img/RabbitImg/rabbit1/rightRabbit.gif");
 
 	// 시작 버튼 이미지아이콘
-	private ImageIcon start = new ImageIcon("img/select/GameStartBtn.png");
+	private ImageIcon start = new ImageIcon("img/select/selectBtn.png");
 	
 	// 이미지를 선택할 버튼
 	private JButton ch1;
@@ -39,7 +39,7 @@ public class SelectPanel extends JPanel {
 	private JButton ch4;
 	
 	private int x = 250;
-	private int y = 200;
+	private int y = 250;
 	
 	// 시작 버튼
 	private JButton StartBtn;
@@ -58,7 +58,7 @@ public class SelectPanel extends JPanel {
 		StartBtn = new JButton(start);
 		StartBtn.setName("StartBtn");
 		StartBtn.addMouseListener((MouseListener) o);
-		StartBtn.setBounds(470, 500, 291, 81);
+		StartBtn.setBounds(470, 550, 291, 81);
 		add(StartBtn);
 		StartBtn.setBorderPainted(false);
 		StartBtn.setContentAreaFilled(false);
@@ -159,5 +159,12 @@ public class SelectPanel extends JPanel {
 		ch4.setBorderPainted(false);
 		ch4.setContentAreaFilled(false);
 		ch4.setFocusPainted(false);
+		
+		JLabel selectBg = new JLabel("");
+		selectBg.setForeground(Color.ORANGE);
+		selectBg.setHorizontalAlignment(SwingConstants.CENTER);
+		selectBg.setIcon(new ImageIcon("img/Objectimg/map1img/selectBack.png"));
+		selectBg.setBounds(0, 0, 1200, 800);
+		add(selectBg);
 	}
 }

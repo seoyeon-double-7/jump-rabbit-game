@@ -66,7 +66,7 @@ public class Util {
 		  g.setColor(internalColor);
 		  g.fill(outline);
 		  g.setStroke(new BasicStroke(size/45));
-//		  g.setColor(Color.BLACK);
+		  g.setColor(Color.BLACK);
 		  g.draw(outline);
 		  
 		  g.setTransform(orig);
