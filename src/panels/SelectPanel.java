@@ -39,7 +39,7 @@ public class SelectPanel extends JPanel {
 	private JButton ch4;
 	
 	private int x = 250;
-	private int y = 250;
+	private int y = 225;
 	
 	// 시작 버튼
 	private JButton StartBtn;
@@ -163,7 +163,7 @@ public class SelectPanel extends JPanel {
 		JLabel selectBg = new JLabel("");
 		selectBg.setForeground(Color.ORANGE);
 		selectBg.setHorizontalAlignment(SwingConstants.CENTER);
-		selectBg.setIcon(new ImageIcon("img/Objectimg/map1img/selectBack.png"));
+		selectBg.setIcon(new ImageIcon("img/Objectimg/map1img/selectBack2.png"));
 		selectBg.setBounds(0, 0, 1200, 800);
 		add(selectBg);
 	}
